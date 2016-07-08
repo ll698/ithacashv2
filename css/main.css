@@ -92,7 +92,6 @@ html, body {
 
 /*****NAVBAR***/
 .main {
-    padding-top: 0px;
 	position: relative;
 	display: block;
 	width: 100%;
@@ -101,12 +100,20 @@ html, body {
 }
 
 .nav {
-    margin: 0 auto;
     height: 50px;
     width: 100%;
     background-color: white;
-    
+    position: relative;
+    }
+.nav_fixed {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+
 
 .nav ul {
     height: 100%;
