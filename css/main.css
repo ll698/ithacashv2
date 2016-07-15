@@ -92,6 +92,7 @@ html, body {
 
 /*****NAVBAR***/
 .main {
+    z-index: -5;
 	position: relative;
 	display: block;
 	width: 100%;
@@ -105,7 +106,9 @@ html, body {
     background-color: white;
     position: relative;
     }
+
 .nav_fixed {
+    z-index: 0;
     height: 50px;
     width: 100%;
     background-color: white;
@@ -121,6 +124,14 @@ html, body {
     text-align: center;
 }
 
+.nav_fixed ul {
+    z-index: 0;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+
 .nav ul li {
     display: inline-block;
     padding-left: 12.5px;
@@ -129,6 +140,14 @@ html, body {
     text-decoration: none;
 }
 
+.nav_fixed ul li {
+    z-index: 0;
+    display: inline-block;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 20px;
+    text-decoration: none;
+}
 
 
 
