@@ -22,3 +22,6 @@ $( document ).ready(function() {
   });
 });
 
+
+
+$('.landing').parallax({imageSrc: '../assets/images/commons.jpg'});
