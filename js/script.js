@@ -19,3 +19,18 @@ $( document ).ready(function() {
     };
   });
 });
+
+
+
+
+
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.parallax').css('margin-top', -(scrolled * 0.6) + 'px');
+    $('.bar-parallax').css('margin-top', -(300 + (scrolled * 0.6)) + 'px');
+    
+}
+
+$(window).scroll(function(e){
+    parallax();
+});
