@@ -2,6 +2,16 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0px;
+
+    /**Scaling background taken from 
+    https://css-tricks.com/perfect-full-page-background-image/
+    Need to fix nav bar to bottom of background image of landing page in order to be effective**/
+
+    /*background: url(../assets/images/commons.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
 }
 
 .landing {
@@ -95,7 +105,7 @@ html, body {
 .nav {
     height: 50px;
     width: 100%;
-    background-color: white;
+    background-color: #29A329;
     position: relative;
     }
 
@@ -103,7 +113,7 @@ html, body {
     z-index: 0;
     height: 50px;
     width: 100%;
-    background-color: white;
+    background-color: #29A329;
     position: fixed;
     top: 0;
     left: 0;
@@ -138,6 +148,8 @@ html, body {
 .nav ul li a {
     text-decoration: none;
     font-family: palanquin;
+    background-color: #29A329;
+    color: #FFFFFF;
 }
 
 .nav_fixed ul li {
@@ -151,8 +163,17 @@ html, body {
 .nav_fixed ul li a {
     text-decoration: none;
     font-family: palanquin;
+    background-color: #29A329;
+    color: #FFFFFF;
 }
 
+.nav a:hover, .nav a:active, .nav_fixed a:hover, .nav_fixed a:active {
+    text-decoration: none;
+    font-family: palanquin;
+    background-color: #2EB82E;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
 
 /**MAIN_CONTENT**/
 
@@ -208,9 +229,12 @@ html, body {
         vertical-align: middle;
         height: 402px;
         width: 100%;
+        display: block;
+        margin: 0 auto;
         /**background: rgba(75, 117, 32, 0.8);**/
         background: rgba(0,0,0,0.7);
-}
+    }
+
     .logo-line {
         position: relative;
         display: block;
@@ -219,40 +243,44 @@ html, body {
         margin: 0 auto;
         padding-left: 100px;
         margin-top: 00px;
-}
+    }
+
     .logo-button {
         margin-top: -250px;
-        margin-right: 20px;
+        /*margin-right: 20px;*/
         float: center;
+        display: block;
+        margin: 0 auto;
         z-index: 5;
         border-radius: 5px;
         color: white; 
         border: 3px solid white;
     
-}
+    }
 
     .logo-button p {
         margin: 0 auto;
         text-align: center;
         font-size: 20px;
-}
+    }
 
     .logo-button1 {
         margin-top: -250px;
-        margin-right: 165px;
+        /*margin-right: 165px;*/
         float: center;
+        display: block;
+        margin: 0 auto;
         z-index: 5;
-
         border-radius: 5px;
         color: white;
         border: 3px solid white;
-}
+    }
 
-.logo-button1 p {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 20px;
-}
+    .logo-button1 p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+    }
     
     
 }
@@ -282,7 +310,8 @@ html, body {
         width: 100%;
         /**background: rgba(75, 117, 32, 0.8);**/
         background: rgba(0,0,0,0.7);
-}
+    }
+
     .logo-line {
         position: relative;
         display: block;
@@ -291,40 +320,45 @@ html, body {
         margin: 0 auto;
         padding-left: 100px;
         margin-top: 00px;
-}
+    }
+
     .logo-button {
         margin-top: -250px;
         margin-right: 20px;
-        float: center;
+        /*float: center;*/
+        display: block;
+        margin: 0 auto;
         z-index: 5;
         border-radius: 5px;
         color: white; 
         border: 3px solid white;
     
-}
+    }
 
     .logo-button p {
         margin: 0 auto;
         text-align: center;
         font-size: 20px;
-}
+    }
 
     .logo-button1 {
         margin-top: -250px;
         margin-right: 165px;
-        float: center;
+        /*float: center;*/
+        display: block;
+        margin: 0 auto;
         z-index: 5;
 
         border-radius: 5px;
         color: white;
         border: 3px solid white;
-}
+    }
 
-.logo-button1 p {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 20px;
-}
+    .logo-button1 p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+    }
     
     
 }
