@@ -97,31 +97,6 @@ html, body {
     border-radius: 25px;
 }
 
-.subheader {
-    display: none;
-    height: 100%;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-}
-
-.subheader ul li {
-    display: block;
-    background-color: #FFFFFF;
-    color: #29A329;
-}
-
-.nav ul li:hover .subheader{
-    display: block;
-}
-
-.subheader ul li a {
-    text-decoration: none;
-    font-family: palanquin;
-    color: #29A329;
-}
-
-
 
 /*****NAVBAR***/
 
@@ -198,6 +173,51 @@ html, body {
     background-color: #2EB82E;
     color: #FFFFFF;
     transition: 0.3s;
+}
+
+/*NAV BAR SUBSECTIONS*/
+.subheader {
+    display: none;
+    height: 100%;
+    margin: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.subheader ul{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+}
+
+.subheader ul li {
+    display: block;
+    /*background-color: #FFFFFF;*/
+    color: #29A329;
+    border: #000000;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: black 2px;
+}
+
+.nav ul li:hover .subheader{
+    display: block;
+}
+
+.nav_fixed ul li:hover .subheader{
+    display: block;
+}
+
+.subheader li:hover .subheader li{
+    background-color: #f1f1f1;
+}
+
+.subheader ul li a {
+    display: block;
+    text-decoration: none;
+    font-family: palanquin;
+    /*background-color: #FFFFFF;*/
+    color: #29A329;
 }
 
 /**MAIN_CONTENT**/
