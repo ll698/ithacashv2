@@ -180,7 +180,7 @@ html, body {
     display: none;
     height: 100%;
     margin: 0;
-    text-align: left;
+    /*text-align: center;*/
     text-decoration: none;
 }
 
@@ -188,6 +188,9 @@ html, body {
     display: block;
     position: absolute;
     min-width: 160px;
+    padding-top: 10px;
+    margin-right: 50px;
+    background-color: #FFFFFF;
 }
 
 .subheader ul li {
@@ -196,8 +199,8 @@ html, body {
     color: #29A329;
     border: #000000;
     text-align: center;
-    background-color: #FFFFFF;
-    border: black 2px;
+    border: black 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .nav ul li:hover .subheader{
