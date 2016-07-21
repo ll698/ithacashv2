@@ -97,6 +97,29 @@ html, body {
     border-radius: 25px;
 }
 
+.subheader {
+    display: none;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.subheader ul li {
+    display: block;
+    background-color: #FFFFFF;
+    color: #29A329;
+}
+
+.nav ul li:hover .subheader{
+    display: block;
+}
+
+.subheader ul li a {
+    text-decoration: none;
+    font-family: palanquin;
+    color: #29A329;
+}
 
 
 
@@ -141,6 +164,7 @@ html, body {
     padding-left: 12.5px;
     padding-right: 12.5px;
     padding-top: 10px;
+    padding-bottom: 10px;
     
    
 }
@@ -148,7 +172,7 @@ html, body {
 .nav ul li a {
     text-decoration: none;
     font-family: palanquin;
-    background-color: #29A329;
+    /*background-color: #29A329;*/
     color: #FFFFFF;
 }
 
@@ -158,16 +182,17 @@ html, body {
     padding-left: 12.5px;
     padding-right: 12.5px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav_fixed ul li a {
     text-decoration: none;
     font-family: palanquin;
-    background-color: #29A329;
+    /*background-color: #29A329;*/
     color: #FFFFFF;
 }
 
-.nav a:hover, .nav a:active, .nav_fixed a:hover, .nav_fixed a:active {
+.nav li:hover, .nav li:active, .nav_fixed li:hover, .nav_fixed li:active {
     text-decoration: none;
     font-family: palanquin;
     background-color: #2EB82E;

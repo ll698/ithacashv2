@@ -150,3 +150,9 @@ $( document ).ready(function() {
 
 
 */
+
+
+
+
+//SUBSECTION NAVBAR FUNCTIONALITY//
+
