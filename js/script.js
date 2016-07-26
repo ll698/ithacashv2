@@ -1,7 +1,12 @@
-
-
+var compPoint = 737;
+var tabPoint = 385;
+var mobPoint = 185;
 
 //DYNAMIC NAVBAR FUNCTIONALITY//
+var medialist = [window.matchMedia("(min-width: 500px)"), 
+        window.matchMedia("(min-width: 320px)")
+    ];
+
 function NavCheck(threshold){
     $(window).scroll(function() {
     var scrollval = $(this).scrollTop();
@@ -25,78 +30,26 @@ function NavCheck(threshold){
 
 // media query change
 function WidthChange(mq) {
-  if (mq.matches) {
-    // window width is at least 500px
-    console.log("Computer");
-    NavCheck(737);
+  if (medialist[0].matches) { //If the window is at leastthe value of 
+    NavCheck(compPoint);
   }
-  else {
-    // window width is less than 500px
-    //NEED TO PREVENT SECOND LISTENER FROM 
-    //CHANGING FROM COMPUTER TO TABLET INCORRECTLY
-    if (window.matchMedia("(min-width: 320px)").matches){
-        console.log("Tablet");
-        NavCheck(385);
-    }
-    else{
-        console.log("Mobile");
-        NavCheck(185); 
-    }
-  }
-}
-
-
-$( document ).ready(function() {
-    if (matchMedia) {
-    var mq = window.matchMedia("(min-width: 500px)");
-    //var mq2 = window.matchMedia("(min-width: 320px)");
-    mq.addListener(WidthChange);
-    //mq2.addListener(WidthChange2);
-    WidthChange(mq);
-    //WidthChange2(mq2);
-    } 
-});
-
-/*// media query change
-function WidthChange(mq) {
-  if (mq.matches) {
-    // window width is at least 750px
-    console.log("Computer");
-    NavCheck(737);
-  }
-  else {
-    // window width is less than 750px
-    //NEED TO PREVENT SECOND LISTENER FROM 
-    //CHANGING FROM COMPUTER TO TABLET INCORRECTLY
-    console.log("Tablet");
-    NavCheck(385);
-  }
-}
-
-function WidthChange2(mq2) {
-  if (mq2.matches) {
-    // window width is at least 320px
-    //NEED TO KEEP FOR RESIZING FROM MOBILE TO TABLET
-    console.log("Tablet");
-    NavCheck(385);
+  else if (medialist[1].matches){
+    NavCheck(tabPoint);
   }
   else{
-    console.log("Mobile");
-    NavCheck(185); 
+    NavCheck(mobPoint);
   }
-
 }
 
+for (var i=0; i<medialist.length;i++){
+    WidthChange(medialist[i]);
+    medialist[i].addListener(WidthChange);
+};
+
+
 $( document ).ready(function() {
-    if (matchMedia) {
-    var mq = window.matchMedia("(min-width: 750px)");
-    var mq2 = window.matchMedia("(min-width: 320px)");
-    mq.addListener(WidthChange);
-    mq2.addListener(WidthChange2);
-    WidthChange(mq);
-    WidthChange2(mq2);
-    } 
-});*/
+    //Stuff
+});
 
 
 function parallax(){
