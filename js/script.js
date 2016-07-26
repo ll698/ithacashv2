@@ -10,6 +10,7 @@ $( document ).ready(function() {
         var nav = $(".nav");
         nav.removeClass("nav");
         nav.addClass("nav_fixed");
+        $('.bar1').css('margin-top', "100px");
         
         
     }
@@ -17,7 +18,7 @@ $( document ).ready(function() {
         var nav = $(".nav_fixed");
         nav.removeClass("nav_fixed");
         nav.addClass("nav");
-        $('.nav').css('background', "#FFFFFF");
+        $('.bar1').css('margin-top', "0px");
     };     
         
     })
