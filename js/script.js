@@ -2,6 +2,10 @@ var compPoint = 737;
 var tabPoint = 385;
 var mobPoint = 185;
 
+$( document ).ready(function() {
+    //Stuff
+});
+
 //DYNAMIC NAVBAR FUNCTIONALITY//
 var medialist = [window.matchMedia("(min-width: 500px)"), 
         window.matchMedia("(min-width: 320px)")
@@ -32,12 +36,21 @@ function NavCheck(threshold){
 function WidthChange(mq) {
   if (medialist[0].matches) { //If the window is at leastthe value of 
     NavCheck(compPoint);
+    $(".menu").show();
+    $("#hamburger").hide();
+    $("#dropdown").removeClass("dropdownlist");
   }
   else if (medialist[1].matches){
     NavCheck(tabPoint);
+    $(".menu").show();
+    $("#hamburger").hide();
+    $("#dropdown").removeClass("dropdownlist");
   }
   else{
     NavCheck(mobPoint);
+    $(".menu").hide();
+    $("#hamburger").show();
+    $("#dropdown").addClass("dropdownlist");
   }
 }
 
@@ -46,11 +59,9 @@ for (var i=0; i<medialist.length;i++){
     medialist[i].addListener(WidthChange);
 };
 
-
-$( document ).ready(function() {
-    //Stuff
+$("#hamburger").click(function(){
+    $(".menu").toggle();
 });
-
 
 function parallax(){
     var scrolled = $(window).scrollTop();
