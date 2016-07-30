@@ -353,6 +353,38 @@ html, body {
     
 }
 
+.bar1-text {
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    padding-right: 0px;
+    width: 40%;
+    float: right;
+    line-height: 1.5;
+    color: #555;
+}
+
+.bar1-text h1 {
+    color: rgba(75, 117, 32, 1);
+    margin-top: -.5em;
+    padding-bottom: .5em;
+}
+
+.bar1-content {
+    border-bottom: thin solid #555;
+    height: 50%;
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 100px;
+}
+
+.bar1-content img {
+    height: 300px;
+    width: 500px;
+    padding-left: 20px;
+    float: left;
+}
+
 /*RESPONSIVENESS*/
 
 @media (max-width: 500px) {
