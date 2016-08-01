@@ -21,6 +21,7 @@ function NavCheck(threshold){
         var nav = $(".nav");
         nav.removeClass("nav");
         nav.addClass("nav_fixed");
+        $('.bar1').css('margin-top', "100px");
         
     }
     else {
