@@ -271,6 +271,79 @@ button #hamburger{
 
 }
 
+/**FOOTER**/
+
+.footer {
+    position: relative;
+	width: 100%;
+	height: 130px;
+    background-color: #555555;
+}
+
+.footer-content {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer-address {
+    float: left;
+    color: white;
+    padding: 10px;
+    
+}
+
+.footer-address1 {
+    float: right;
+    color: white;
+    padding: 10px;
+    
+}
+
+.footer img {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin-left: 50%;
+    padding-top: 15%;
+}
+
+
+.fnav {
+    z-index: 5;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    }
+
+.fnav ul {
+    z-index: 5;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fnav ul li {
+    display: inline-block;
+    padding-left: 5.5px;
+    padding-right: 5.5px; 
+}
+
+.fnav ul li a {
+    text-decoration: none;
+    font-family: palanquin;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+.fnav ul li a:hover {
+    color: rgba(75, 117, 32, 1);
+}
+
 /**MAIN_CONTENT**/
 
 .bar1 {
