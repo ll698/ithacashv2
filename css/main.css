@@ -115,6 +115,12 @@ html, body {
     padding: 2px 14px;
 }
 
+.nav-button:hover{
+    background-color: rgb(102, 160, 44);
+    box-shadow: 2px 2px 6px;
+    transition: 0.2s;
+}
+
 .nav-current-tab{
     color: rgba(75, 117, 32, 1);
     border-bottom: thin solid rgba(75, 117, 32, 1);
