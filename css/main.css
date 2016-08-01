@@ -178,6 +178,44 @@ html, body {
     color: rgba(75, 117, 32, 1);
 }
 
+/**Hamburger/Flyout Menu**/
+
+button #hamburger{
+    /*background-color: white;*/
+    display: none;
+    border: 2px solid black;
+    text-align: center;
+    float: right;
+    font-size: 12px;
+    box-shadow: 1px 1px 4px;
+}
+
+/*button #hamburger:active{
+    background-color: #808080;
+    color: white;
+    box-shadow: 2px 2px 7px;
+}*/
+
+.dropdownlist{
+    background-color: white;
+    box-shadow: 0.5px 0.5px 3px;
+    text-align: center;
+}
+
+.dropdownlist ul{
+    display: inline-block;
+}
+
+.dropdownlist li{
+    border: 1px solid black;
+}
+
+.dropdownlist li:hover{
+    background-color: #f1f1f1;
+    transition: 0.2s;
+    padding: 0 0 0 0;
+}
+
 /**position-fixed**/
 
 .nav_fixed {
@@ -517,6 +555,13 @@ html, body {
             margin-top: -10px;
             float: left;
 }
+
+        button #hamburger{
+            display: inline-block;
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
 }
     
     
