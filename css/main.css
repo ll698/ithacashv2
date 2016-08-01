@@ -2,7 +2,6 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0px;
-    font-family: palanquin;
 }
 
 
@@ -113,12 +112,6 @@ html, body {
     border-radius: 2px;
     color: white;
     padding: 2px 14px;
-}
-
-.nav-button:hover{
-    background-color: rgb(102, 160, 44);
-    box-shadow: 2px 2px 6px;
-    transition: 0.2s;
 }
 
 .nav-current-tab{
@@ -234,106 +227,6 @@ html, body {
 
 }
 
-/**Hamburger/Flyout Menu**/
-
-button #hamburger{
-    /*background-color: white;*/
-    display: none;
-    border: 2px solid black;
-    text-align: center;
-    float: right;
-    font-size: 12px;
-    box-shadow: 1px 1px 4px;
-}
-
-/*button #hamburger:active{
-    background-color: #808080;
-    color: white;
-    box-shadow: 2px 2px 7px;
-}*/
-
-.dropdownlist{
-    background-color: white;
-    box-shadow: 0.5px 0.5px 3px;
-    text-align: center;
-}
-
-.dropdownlist ul{
-    display: inline-block;
-}
-
-.dropdownlist li{
-    border: 1px solid black;
-}
-
-.dropdownlist li:hover{
-    background-color: #f1f1f1;
-    transition: 0.2s;
-    padding: 0 0 0 0;
-}
-
-
-/******FOOTER*****/
-
-.footer {
-    position: relative;
-	width: 100%;
-	height: 150px;
-    background-color: #555555;
-}
-
-.footer-content {
-    display: block;
-    width: 100%
-    margin: 0 auto;
-}
-
-.footer-address1 {
-    float: right;
-    color: white;
-    padding: 10px;
-    
-}
-
-.footer img {
-    position: relative;
-    display: block;
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-    padding-top: 3%;
-}
-
-
-.fnav {
-    }
-
-.footer ul {
-    z-index: 5;
-    width: 93.5%;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-.footer ul li {
-    display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px; 
-}
-
-.footer ul li a {
-    text-decoration: none;
-    font-family: palanquin;
-    font-size: 12px;
-    color: #909090;
-}
-
-
-.footer ul li a:hover {
-    color: #bfbfbf;
-}
-
 /**MAIN_CONTENT**/
 
 .bar1 {
@@ -341,7 +234,7 @@ button #hamburger{
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 1000px;
+	height: 700px;
 	background-color: white;
 }
 
@@ -396,37 +289,6 @@ button #hamburger{
 	height: 750px;
     background: rgba(0,0,0,0.7);
     
-}
-
-.bar1-text {
-    display: block;
-    position: relative;
-    padding: 2em;
-    line-height: 40px;
-    width: 40%;
-    float: right;
-    color: #555;
-}
-
-.bar1-text h1 {
-    color: rgba(75, 117, 32, 1);
-    margin-top: -.9em;
-    padding-bottom: .5em;
-}
-
-.bar1-content1 {
-    border-bottom: thin solid #555;
-    height: 35%;
-    width: 80%;
-    margin: 0 auto; 
-    padding-top: 100px;
-}
-
-.bar1-content1 img {
-    height: 300px;
-    width: 500px;
-    padding-left: 20px;
-    float: left;
 }
 
 /*RESPONSIVENESS*/
@@ -597,10 +459,6 @@ button #hamburger{
             margin-top: -10px;
             float: left;
 }
-        button #hamburger{
-            display: inline-block;
-            float: right;
-        }
 }
     
     
