@@ -408,7 +408,7 @@ button #hamburger{
     padding-bottom: .5em;
 }
 
-.bar1-content {
+.bar1-content1 {
     border-bottom: thin solid #555;
     height: 35%;
     width: 80%;
@@ -416,7 +416,7 @@ button #hamburger{
     padding-top: 100px;
 }
 
-.bar1-content img {
+.bar1-content1 img {
     height: 300px;
     width: 500px;
     padding-left: 20px;
