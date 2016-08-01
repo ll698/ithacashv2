@@ -291,6 +291,46 @@ html, body {
     
 }
 
+.bar1-content1 {
+    border-bottom: thin solid #555;
+    height: 35%;
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 100px;
+}
+
+.bar1-content1 img {
+    height: 300px;
+    width: 500px;
+    padding-left: 20px;
+    float: left;
+}
+
+.bar1-content1-text {
+    display: block;
+    position: relative;
+    padding: 2em;
+    line-height: 40px;
+    width: 40%;
+    float: right;
+    color: #555;
+}
+
+.bar1-content1-text h1 {
+    color: rgba(75, 117, 32, 1);
+    margin-top: -.9em;
+    padding-bottom: .5em;
+}
+
+.bar1-content2 {
+    position: relative;
+    border-bottom: thin solid #555;
+    height: 35%;
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 100px;
+}
+
 /*RESPONSIVENESS*/
 
 @media (max-width: 500px) {

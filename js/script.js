@@ -1,16 +1,26 @@
+var compPoint = 737;
+var tabPoint = 385;
+var mobPoint = 185;
 
-
+$( document ).ready(function() {
+    //Stuff
+});
 
 //DYNAMIC NAVBAR FUNCTIONALITY//
-$( document ).ready(function() {
+var medialist = [window.matchMedia("(min-width: 500px)"), 
+        window.matchMedia("(min-width: 320px)")
+    ];
+
+function NavCheck(threshold){
     $(window).scroll(function() {
     var scrollval = $(this).scrollTop();
+
+    //console.log(threshold);
         
-    if (scrollval > 737) {
+    if (scrollval > threshold) {
         var nav = $(".nav");
         nav.removeClass("nav");
         nav.addClass("nav_fixed");
-        
         
     }
     else {
@@ -18,13 +28,41 @@ $( document ).ready(function() {
         nav.removeClass("nav_fixed");
         nav.addClass("nav");
         $('.nav').css('background', "#FFFFFF");
-    };     
-        
-    })
+        $('.bar1').css('margin-top', "0px");
+    };
   });
+}
 
+// media query change
+function WidthChange(mq) {
+  if (medialist[0].matches) { //If the window is at leastthe value of 
+    NavCheck(compPoint);
+    $(".menu").show();
+    $("#hamburger").hide();
+    $("#dropdown").removeClass("dropdownlist");
+  }
+  else if (medialist[1].matches){
+    NavCheck(tabPoint);
+    $(".menu").show();
+    $("#hamburger").hide();
+    $("#dropdown").removeClass("dropdownlist");
+  }
+  else{
+    NavCheck(mobPoint);
+    $(".menu").hide();
+    $("#hamburger").show();
+    $("#dropdown").addClass("dropdownlist");
+  }
+}
 
+for (var i=0; i<medialist.length;i++){
+    WidthChange(medialist[i]);
+    medialist[i].addListener(WidthChange);
+};
 
+$("#hamburger").click(function(){
+    $(".menu").toggle();
+});
 
 
 function parallax(){
