@@ -1,7 +1,7 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0px;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
 }
 
 
@@ -11,10 +11,10 @@ html, body {
     z-index: -5;
     margin: auto;
     margin-top: -16px;
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 752px;
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 752px;
     font-family: palanquin;
 }
 
@@ -24,7 +24,7 @@ html, body {
     top: 0;
     z-index: -10;
     width: 100%;
-    height: 752px;
+	height: 752px;
     background: url(../assets/images/landing.jpg);
     background-repeat: no-repeat;
     background-size: 1600px 1000px;
@@ -49,8 +49,8 @@ html, body {
     margin-right: 20px;
     float: right;
     z-index: 5;
-    width: 120px;
-    height: 40px;
+	width: 120px;
+	height: 40px;
     border-radius: 5px;
     color: white; 
     border: 3px solid white;
@@ -68,8 +68,8 @@ html, body {
     margin-right: 165px;
     float: right;
     z-index: 5;
-    width: 120px;
-    height: 40px;
+	width: 120px;
+	height: 40px;
     border-radius: 5px;
     color: white;
     border: 3px solid white;
@@ -94,8 +94,8 @@ html, body {
 .logo-box {
     margin: auto;
     z-index: 5;
-    width: 200px;
-    height: 200px;
+	width: 200px;
+	height: 200px;
     background-color: white;
     border-radius: 25px;
 }
@@ -271,106 +271,33 @@ button #hamburger{
 
 }
 
-/**FOOTER**/
-
-.footer {
-    position: relative;
-	width: 100%;
-	height: 130px;
-    background-color: #555555;
-}
-
-.footer-content {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.footer-address {
-    float: left;
-    color: white;
-    padding: 10px;
-    
-}
-
-.footer-address1 {
-    float: right;
-    color: white;
-    padding: 10px;
-    
-}
-
-.footer img {
-    position: relative;
-    height: 50px;
-    width: 50px;
-    margin-left: 50%;
-    padding-top: 15%;
-}
-
-
-.fnav {
-    z-index: 5;
-    height: 50px;
-    width: 100%;
-    margin: 0 auto;
-    color: white;
-    }
-
-.fnav ul {
-    z-index: 5;
-    left: 0;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-.fnav ul li {
-    display: inline-block;
-    padding-left: 5.5px;
-    padding-right: 5.5px; 
-}
-
-.fnav ul li a {
-    text-decoration: none;
-    font-family: palanquin;
-    font-size: 12px;
-    color: #ffffff;
-}
-
-
-.fnav ul li a:hover {
-    color: rgba(75, 117, 32, 1);
-}
-
 /**MAIN_CONTENT**/
 
 .bar1 {
     z-index: 1;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 850px;
-    background-color: white;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 850px;
+	background-color: white;
     font-family: palanquin;
 }
 
 .bar2 {
     z-index: 0;
-    position: relative;
+	position: relative;
     display: block;
-    width: 100%;
-    height: 700px;
+	width: 100%;
+	height: 700px;
     background: rgba(0,0,0,0.7);
     top: 0;
 }
 
 .bar3 {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 800px;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 800px;
     background-color: white;
 }
 
@@ -378,8 +305,8 @@ button #hamburger{
     z-index: -5;
     position: absolute;
     left: 0;
-    width: 100%;
-    height: 1600px;
+	width: 100%;
+	height: 1600px;
     background: url(../assets/images/bar1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -391,8 +318,8 @@ button #hamburger{
     position: fixed;
     left: 0;
     margin-bottom: 0;
-    width: 100%;
-    height: 1600px;
+	width: 100%;
+	height: 1600px;
     background: url(../assets/images/bar1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -403,8 +330,8 @@ button #hamburger{
     z-index: 0;
     position: absolute;
     left: 0;
-    width: 100%;
-    height: 750px;
+	width: 100%;
+	height: 750px;
     background: rgba(0,0,0,0.7);
     
 }
@@ -481,8 +408,8 @@ button #hamburger{
         left: 0;
         top: 0;
         z-index: -10;
-        width: 100%;
-        height: 402px;
+	    width: 100%;
+	    height: 402px;
         background: url(../assets/images/commons.jpg);
         background-repeat: no-repeat;
         background-size: cover;
