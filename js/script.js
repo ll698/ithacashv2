@@ -61,8 +61,8 @@ for (var i=0; i<medialist.length;i++){
     medialist[i].addListener(WidthChange);
 };
 
-$("#hamburger").click(function(){
-    console.log(test);
+$("#hamburger").on ('click', function(){
+    console.log("Clicked!");
     $(".menu").toggle();
 });
 
