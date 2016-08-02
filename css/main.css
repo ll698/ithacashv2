@@ -570,8 +570,29 @@ button #hamburger{
             margin-top: 10px;
             margin-right: 10px;
         }
+        .bar1-content1-text {
+            display: block;
+            position: relative;
+            padding-left: 20px;
+            text-align: center;
+            line-height: 15px;
+            width: 100%;
+            color: #555;
 }
     
+    
+        .bar1-content1-text h1 {
+            color: black/**rgba(75, 117, 32, 1)**/;
+            margin-top: -.9em;
+            padding-bottom: .5em;
+            text-align: center;
+            font-size: 15px;
+}
+}
+    
+
+
+
     
 
 

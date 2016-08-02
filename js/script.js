@@ -62,6 +62,7 @@ for (var i=0; i<medialist.length;i++){
 };
 
 $("#hamburger").click(function(){
+    console.log(test);
     $(".menu").toggle();
 });
 
